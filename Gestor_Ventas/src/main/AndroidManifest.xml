@@ -61,6 +61,10 @@
             android:name=".SignInActivity"
             android:label="Gestor Ventas" >
         </activity>
+        <activity
+            android:name=".PedidoActivity"
+            android:label="Gestor Ventas" >
+        </activity>
 
 
 

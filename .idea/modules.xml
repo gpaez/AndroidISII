@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/ResideMenu/ResideMenu.iml" filepath="$PROJECT_DIR$/ResideMenu/ResideMenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/supersaiyan-scrollview/supersaiyan-scrollview.iml" filepath="$PROJECT_DIR$/supersaiyan-scrollview/supersaiyan-scrollview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/util-v4/util-v4.iml" filepath="$PROJECT_DIR$/util-v4/util-v4.iml" />
     </modules>
   </component>
 </project>

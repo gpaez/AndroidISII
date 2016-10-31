@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/ResideMenu" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/supersaiyan-scrollview" />
+            <option value="$PROJECT_DIR$/util-v4" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
