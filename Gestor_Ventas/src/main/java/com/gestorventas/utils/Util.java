@@ -15,6 +15,7 @@ import android.support.v4.app.Fragment;
 
 import android.content.Context;
 import android.os.Vibrator;
+import android.support.v7.app.AppCompatActivity;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -91,6 +92,13 @@ public class Util {
   }
 
   public static void err_Log(Activity view, String mensaje){
+		Vibrator vibrator =(Vibrator) view.getSystemService(Context.VIBRATOR_SERVICE);
+		vibrator.vibrate(200);
+		Toast toast1 = Toast.makeText(view.getApplicationContext(),mensaje, Toast.LENGTH_SHORT);
+		toast1.show();
+	}
+
+	public static void err_Log(AppCompatActivity view, String mensaje){
 		Vibrator vibrator =(Vibrator) view.getSystemService(Context.VIBRATOR_SERVICE);
 		vibrator.vibrate(200);
 		Toast toast1 = Toast.makeText(view.getApplicationContext(),mensaje, Toast.LENGTH_SHORT);

@@ -63,7 +63,8 @@
         </activity>
         <activity
             android:name=".PedidoActivity"
-            android:label="Gestor Ventas" >
+            android:label="Gestor Ventas"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
 

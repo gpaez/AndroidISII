@@ -1,9 +1,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_marginLeft="32dp"
-    android:layout_marginRight="32dp" >
+    android:layout_marginRight="32dp"
+    >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -56,10 +58,10 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/linearLayout1"
         android:layout_alignParentLeft="true"
-        android:src="@drawable/icon" />
+        android:src="@drawable/logo" />
 
 </RelativeLayout>

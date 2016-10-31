@@ -80,6 +80,14 @@ public class PedidoClienteList extends ListFragment  {
             adapter.notifyDataSetChanged();
             lista.setAdapter(adapter);
 
+            lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    PedidoTab pedidoTab = PedidoTab.values()[position];
+                    pedidoTab.startActivity(getActivity());
+                }
+            });
+
 
 
         }catch (Exception ex){
