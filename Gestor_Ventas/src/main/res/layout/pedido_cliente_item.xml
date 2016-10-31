@@ -9,13 +9,15 @@
         android:layout_width="118dp"
         android:layout_height="wrap_content"
         android:visibility="visible"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textColor="@color/azure" />
 
     <TextView
         android:id="@+id/cliente_nombre"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="@color/azure" />
 
 </LinearLayout>

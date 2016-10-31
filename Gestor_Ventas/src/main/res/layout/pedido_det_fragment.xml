@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/pnlProductoPedido">
+
+        <Spinner
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:id="@+id/imageButton2"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pnlProductoPedido"
+        android:id="@+id/pnlCuerpoPedido">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/pnlTitulo"
+            android:layout_height="30dp">
+
+            <TextView
+                android:text="Descripcion"
+                android:layout_height="30dp"
+                android:id="@+id/textView"
+                android:textSize="15sp"
+                android:textColor="@color/azure"
+                android:textStyle="normal|bold"
+                android:layout_width="150dp" />
+
+            <TextView
+                android:text="Precio"
+                android:layout_height="30dp"
+                android:id="@+id/textView12"
+                android:layout_width="70dp"
+                android:textStyle="normal|bold"
+                android:textColor="@color/azure" />
+
+            <TextView
+                android:text="Cantidad"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:id="@+id/textView13"
+                android:layout_weight="0.13"
+                android:textStyle="normal|bold"
+                android:textColor="@color/azure" />
+
+            <TextView
+                android:text="Total"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:id="@+id/textView14"
+                android:layout_weight="1"
+                android:textStyle="normal|bold"
+                android:textColor="@color/azure" />
+
+        </LinearLayout>
+
+        <com.nolanlawson.supersaiyan.widget.SuperSaiyanScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            myapp:ssjn_overlaySizeScheme="small"
+            android:layout_below="@+id/pnlTitulo">
+
+            <ListView
+                android:id="@+id/android:list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.nolanlawson.supersaiyan.widget.SuperSaiyanScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
