@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/library/build/intermediates/res/merged/androidTest/debug/drawable/shadow_top.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/library/build/intermediates/bundles/debug/res/drawable/shadow_top.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/library/build/intermediates/res/merged/androidTest/debug/drawable/shadow_left.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/library/build/intermediates/bundles/debug/res/drawable/shadow_left.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/library/build/intermediates/res/merged/androidTest/debug/drawable/shadow_right.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/library/build/intermediates/bundles/debug/res/drawable/shadow_right.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/library/build/intermediates/res/merged/androidTest/debug/drawable/shadow_bottom.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/library/build/intermediates/bundles/debug/res/drawable/shadow_bottom.xml"
+    }
+]

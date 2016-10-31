@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/fastscroll_thumb_default_holo.png",
+        "source": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/drawable-mdpi-v4/fastscroll_thumb_default_holo.png"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/fastscroll_thumb_pressed_holo.png",
+        "source": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/drawable-mdpi-v4/fastscroll_thumb_pressed_holo.png"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/popup_full_dark.9.png",
+        "source": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/drawable-mdpi-v4/popup_full_dark.9.png"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/fastscroll_thumb_holo.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/drawable-mdpi-v4/fastscroll_thumb_holo.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/drawable-mdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/popup_full_bright.9.png",
+        "source": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/drawable-mdpi-v4/popup_full_bright.9.png"
+    }
+]

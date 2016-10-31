@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GestorVentas</string>
+    <string name="dummy_email">jondoe@gmail.com</string>
+    <string name="dummy_password">123456789</string>
+    <string name="Sign_in">Sign in</string>
+    <string name="Success">Success</string>
+    <string name="Loading">Loading..</string>
+    <string name="Loading_Complete">Loading Complete, button is disabled</string>
+    <string name="lblDatosPersonales">Datos Personales</string>
+    <string name="lblDatosUsuarios">Datos de Usuarios</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="v_nombre">Nombre</string>
+    <string name="v_apellido">Apellido</string>
+    <string name="v_correo">Correo Electrónico</string>
+    <string name="v_numero_telefono">Celular</string>
+    <string name="v_usuario">Usuario</string>
+    <string name="v_password">Password</string>
+    <string name="v_confi_password">Confirme Password</string>
+    <string name="v_Clientes">Listado de Clientes</string>
+    <string name="simple_adapter">Simple adapter</string>
+    <string name="style_adapter">Style adapter</string>
+    <string name="family_adapter">Family adapter</string>
+    <string name="parar_actualizaciones">Parar Actualizaciones</string>
+    <string name="iniciar_actualizaciones">Iniciar Actualizaciones</string>
+    <string name="MsjCampoVacio">El campo $$ no puede quedar vacío.</string>
+    <string name="MsjCamposVacios">Al menos uno de los siguientes campos ($$) deben contener valores.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

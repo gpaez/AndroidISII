@@ -1,0 +1,224 @@
+[
+    {
+        "outputFile": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 51,
+                    "endOffset": 102
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 51,
+                        "endOffset": 102
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 107,
+                    "endColumn": 53,
+                    "endOffset": 156
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 53,
+                        "endOffset": 156
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 161,
+                    "endColumn": 45,
+                    "endOffset": 202
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 45,
+                        "endOffset": 202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 207,
+                    "endColumn": 49,
+                    "endOffset": 252
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 207,
+                        "endColumn": 49,
+                        "endOffset": 252
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 257,
+                    "endColumn": 45,
+                    "endOffset": 298
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 257,
+                        "endColumn": 45,
+                        "endOffset": 298
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 303,
+                    "endColumn": 44,
+                    "endOffset": 343
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 303,
+                        "endColumn": 44,
+                        "endOffset": 343
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 348,
+                    "endColumn": 45,
+                    "endOffset": 389
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 348,
+                        "endColumn": 45,
+                        "endOffset": 389
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 394,
+                    "endLine": 12,
+                    "endColumn": 12,
+                    "endOffset": 553
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 394,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 553
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 558,
+                    "endLine": 22,
+                    "endColumn": 12,
+                    "endOffset": 1051
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 558,
+                        "endLine": 22,
+                        "endColumn": 12,
+                        "endOffset": 1051
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1056,
+                    "endLine": 32,
+                    "endColumn": 12,
+                    "endOffset": 1625
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1056,
+                        "endLine": 32,
+                        "endColumn": 12,
+                        "endOffset": 1625
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1630,
+                    "endLine": 35,
+                    "endColumn": 12,
+                    "endOffset": 1754
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/LibraryNotifique/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1630,
+                        "endLine": 35,
+                        "endColumn": 12,
+                        "endOffset": 1754
+                    }
+                }
+            }
+        ]
+    }
+]

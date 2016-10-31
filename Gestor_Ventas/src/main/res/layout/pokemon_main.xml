@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PokemonActivity" >
+
+    <com.nolanlawson.supersaiyan.widget.SuperSaiyanScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/checkboxes"
+        myapp:ssjn_overlaySizeScheme="small" >
+
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+    </com.nolanlawson.supersaiyan.widget.SuperSaiyanScrollView>
+
+    <LinearLayout
+        android:id="@+id/checkboxes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:drawable/alert_light_frame"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkbox_titles"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".5"
+            android:checked="true"
+            android:text="Show section titles"
+            android:textSize="11sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_overlays"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".5"
+            android:checked="true"
+            android:text="Show overlays"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</RelativeLayout>

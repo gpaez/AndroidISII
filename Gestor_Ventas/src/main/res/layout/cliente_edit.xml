@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_normal">
+
+    <TextView
+        android:text="Razon Social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtRazonSocial"
+        android:textColor="@color/azure"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editRazonSocial"
+        android:inputType="textCapSentences"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/txtRazonSocial"
+        android:layout_alignParentEnd="true"
+        android:padding="20px">
+
+        <requestFocus/>
+
+    </EditText>
+
+    <TextView
+        android:text="Direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/txtDireccion"
+        android:layout_below="@+id/editRazonSocial"
+        android:layout_alignStart="@+id/txtRazonSocial"
+        android:textColor="@color/azure"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editDirelccion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_below="@+id/txtDireccion"
+        android:layout_alignParentStart="true"
+        android:padding="20px"/>
+
+    <TextView
+        android:text="RUC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDirelccion"
+        android:layout_alignEnd="@+id/txtDireccion"
+        android:layout_marginTop="11dp"
+        android:id="@+id/edtRUC"
+        android:layout_alignStart="@+id/txtDireccion"
+        android:textColor="@color/azure"
+        android:textStyle="bold" />
+
+    <EditText
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/edtRUC"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editRUC"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:padding="20px"/>
+
+    <TextView
+        android:text="Cedula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/editRUC"
+        android:id="@+id/txtCedula"
+        android:layout_alignTop="@+id/edtRUC"
+        android:layout_alignStart="@+id/editCedula"
+        android:textColor="@color/azure"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editCedula"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/txtCedula"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:padding="20px"/>
+
+        <TextView
+            android:text="Tipo Pago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editRUC"
+            android:layout_alignStart="@+id/edtRUC"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtContado"
+            android:textColor="@color/azure"
+            android:textStyle="bold" />
+
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_default"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtContado"
+            android:layout_marginEnd="12dp"
+            />
+
+        <TextView
+            android:text="Telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sb_default"
+            android:layout_alignStart="@+id/txtContado"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtTelefono"
+            android:layout_alignEnd="@+id/edtRUC"
+            android:textColor="@color/azure"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editTelefono"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_below="@+id/txtTelefono"
+            android:layout_alignParentStart="true"
+            android:padding="20px"/>
+
+        <TextView
+            android:text="Longitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTelefono"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textLongitud"
+            android:textColor="@color/azure"
+            android:textStyle="bold"
+            android:layout_alignEnd="@+id/sb_default" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editLongitud"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_below="@+id/textLongitud"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/editTelefono"
+            android:padding="20px"/>
+
+        <Button
+            android:text="Registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/txtContado"
+            android:id="@+id/btnRegistrarClientes"
+            android:layout_alignParentStart="true"
+            style="@style/Widget.AppCompat.Button.Colored"
+             />
+
+        <TextView
+            android:text="Contado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editRUC"
+            android:layout_marginEnd="7dp"
+            android:id="@+id/txtPago"
+            android:layout_alignTop="@+id/sb_default"
+            android:textColor="@color/azure"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="Latitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editLongitud"
+            android:layout_alignStart="@+id/btnLatitude"
+            android:id="@+id/txtLatitud"
+            android:textColor="@color/azure"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/txtLatitud"
+            android:layout_alignStart="@+id/editCedula"
+            android:id="@+id/editLatitud"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:padding="20px"/>
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editLatitud"
+            android:layout_alignEnd="@+id/editLatitud"
+            android:id="@+id/btnLatitude"
+            android:textOn="@string/parar_actualizaciones"
+            android:textOff="@string/iniciar_actualizaciones"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

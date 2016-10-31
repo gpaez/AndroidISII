@@ -1,0 +1,277 @@
+[
+    {
+        "outputFile": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 48,
+                        "endOffset": 99
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 743,
+                    "endColumn": 51,
+                    "endOffset": 790
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 743,
+                        "endColumn": 51,
+                        "endOffset": 790
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 795,
+                    "endColumn": 60,
+                    "endOffset": 851
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 795,
+                        "endColumn": 60,
+                        "endOffset": 851
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 856,
+                    "endColumn": 61,
+                    "endOffset": 913
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 856,
+                        "endColumn": 61,
+                        "endOffset": 913
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 918,
+                    "endColumn": 60,
+                    "endOffset": 974
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 918,
+                        "endColumn": 60,
+                        "endOffset": 974
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 979,
+                    "endColumn": 61,
+                    "endOffset": 1036
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 979,
+                        "endColumn": 61,
+                        "endOffset": 1036
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1041,
+                    "endColumn": 57,
+                    "endOffset": 1094
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1041,
+                        "endColumn": 57,
+                        "endOffset": 1094
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1099,
+                    "endColumn": 58,
+                    "endOffset": 1153
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1099,
+                        "endColumn": 58,
+                        "endOffset": 1153
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1158,
+                    "endColumn": 56,
+                    "endOffset": 1210
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1158,
+                        "endColumn": 56,
+                        "endOffset": 1210
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1215,
+                    "endColumn": 58,
+                    "endOffset": 1269
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1215,
+                        "endColumn": 58,
+                        "endOffset": 1269
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1274,
+                    "endColumn": 58,
+                    "endOffset": 1328
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1274,
+                        "endColumn": 58,
+                        "endOffset": 1328
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1333,
+                    "endColumn": 58,
+                    "endOffset": 1387
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1333,
+                        "endColumn": 58,
+                        "endOffset": 1387
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1392,
+                    "endLine": 29,
+                    "endColumn": 12,
+                    "endOffset": 1678
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1392,
+                        "endLine": 29,
+                        "endColumn": 12,
+                        "endOffset": 1678
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1683,
+                    "endLine": 32,
+                    "endColumn": 12,
+                    "endOffset": 1838
+                },
+                "from": {
+                    "file": "/Users/Guille/Desktop/GestorVentas/supersaiyan-scrollview/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1683,
+                        "endLine": 32,
+                        "endColumn": 12,
+                        "endOffset": 1838
+                    }
+                }
+            }
+        ]
+    }
+]

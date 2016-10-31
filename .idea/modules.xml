@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GestorVentas.iml" filepath="$PROJECT_DIR$/GestorVentas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gestor_Ventas/Gestor_Ventas.iml" filepath="$PROJECT_DIR$/Gestor_Ventas/Gestor_Ventas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibraryButton/LibraryButton.iml" filepath="$PROJECT_DIR$/LibraryButton/LibraryButton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibraryNotifique/LibraryNotifique.iml" filepath="$PROJECT_DIR$/LibraryNotifique/LibraryNotifique.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibrarySwitch/LibrarySwitch.iml" filepath="$PROJECT_DIR$/LibrarySwitch/LibrarySwitch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ResideMenu/ResideMenu.iml" filepath="$PROJECT_DIR$/ResideMenu/ResideMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supersaiyan-scrollview/supersaiyan-scrollview.iml" filepath="$PROJECT_DIR$/supersaiyan-scrollview/supersaiyan-scrollview.iml" />
+    </modules>
+  </component>
+</project>

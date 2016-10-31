@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/ResideMenu/build/intermediates/res/merged/androidTest/debug/layout/residemenu_custom.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/ResideMenu/build/intermediates/bundles/debug/res/layout/residemenu_custom.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/ResideMenu/build/intermediates/res/merged/androidTest/debug/layout/residemenu_item.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/ResideMenu/build/intermediates/bundles/debug/res/layout/residemenu_item.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/ResideMenu/build/intermediates/res/merged/androidTest/debug/layout/residemenu_custom_right_scrollview.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/ResideMenu/build/intermediates/bundles/debug/res/layout/residemenu_custom_right_scrollview.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/ResideMenu/build/intermediates/res/merged/androidTest/debug/layout/layout.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/ResideMenu/build/intermediates/bundles/debug/res/layout/layout.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/ResideMenu/build/intermediates/res/merged/androidTest/debug/layout/residemenu_custom_left_scrollview.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/ResideMenu/build/intermediates/bundles/debug/res/layout/residemenu_custom_left_scrollview.xml"
+    }
+]

@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gestorventas">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/ic_launcher"
+                 android:allowBackup="true">
+        <provider android:multiprocess="true"
+            android:exported="false"
+            android:name="com.gestorventas.database.DatabaseProvider"
+            android:authorities="com.gestorventas.database.DatabaseProvider">
+        </provider>
+
+        <activity android:name="SignInActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="adjustResize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="MenuActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <activity
+            android:name="PedidoCargaActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Holo" />
+
+        <activity
+            android:name="RegisterActiviteUser"
+            android:configChanges="orientation|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Holo" />
+
+        <activity
+            android:name=".ClienteActivity"
+            android:label="@string/v_Clientes" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/v_Clientes" >
+        </activity>
+        <activity
+            android:name=".FamilyTable"
+            android:label="@string/v_Clientes" >
+        </activity>
+        <activity android:name=".PokemonActivity"
+                  android:label="Pokemon">
+        </activity>
+
+
+
+    </application>
+
+</manifest>

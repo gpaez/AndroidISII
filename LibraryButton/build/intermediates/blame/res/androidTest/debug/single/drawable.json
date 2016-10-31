@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/LibraryButton/build/intermediates/res/merged/androidTest/debug/drawable/rect_complete.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/LibraryButton/build/intermediates/bundles/debug/res/drawable/rect_complete.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/LibraryButton/build/intermediates/res/merged/androidTest/debug/drawable/rect_normal.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/LibraryButton/build/intermediates/bundles/debug/res/drawable/rect_normal.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/LibraryButton/build/intermediates/res/merged/androidTest/debug/drawable/rect_progress.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/LibraryButton/build/intermediates/bundles/debug/res/drawable/rect_progress.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/LibraryButton/build/intermediates/res/merged/androidTest/debug/drawable/rect_error.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/LibraryButton/build/intermediates/bundles/debug/res/drawable/rect_error.xml"
+    },
+    {
+        "merged": "/Users/Guille/Desktop/GestorVentas/LibraryButton/build/intermediates/res/merged/androidTest/debug/drawable/rect_pressed.xml",
+        "source": "/Users/Guille/Desktop/GestorVentas/LibraryButton/build/intermediates/bundles/debug/res/drawable/rect_pressed.xml"
+    }
+]

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/blue_normal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/pnlTitulo"
+        android:layout_height="30dp">
+
+        <TextView
+            android:text="Codigo Cliente"
+            android:layout_width="132dp"
+            android:layout_height="37dp"
+            android:id="@+id/textView"
+            android:textSize="15sp"
+            android:textColor="@color/azure"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="Razon Social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="15sp"
+            android:textColor="@color/azure"
+            android:textStyle="normal|bold"/>
+    </LinearLayout>
+
+    <com.nolanlawson.supersaiyan.widget.SuperSaiyanScrollView
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    myapp:ssjn_overlaySizeScheme="small"
+        android:layout_below="@+id/pnlTitulo">
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </com.nolanlawson.supersaiyan.widget.SuperSaiyanScrollView>
+
+</RelativeLayout>
