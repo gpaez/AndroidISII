@@ -1,1 +1,2 @@
-include ':library',':LibraryButton',':ResideMenu',':LibraryNotifique',':LibrarySwitch','supersaiyan-scrollview', ':Gestor_Ventas'
+include ':library',':LibraryButton',':ResideMenu',':LibraryNotifique',':LibrarySwitch',
+        'supersaiyan-scrollview',':LibraryTab', ':Gestor_Ventas'
