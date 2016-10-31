@@ -60,6 +60,6 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/linearLayout1"
         android:layout_alignParentLeft="true"
-        android:src="@drawable/barbo1" />
+        android:src="@drawable/icon" />
 
 </RelativeLayout>

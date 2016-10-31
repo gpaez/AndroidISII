@@ -13,7 +13,7 @@
 
 
     <application android:label="@string/app_name"
-                 android:icon="@drawable/ic_launcher"
+                 android:icon="@drawable/icon"
                  android:allowBackup="true">
         <provider android:multiprocess="true"
             android:exported="false"
@@ -21,7 +21,7 @@
             android:authorities="com.gestorventas.database.DatabaseProvider">
         </provider>
 
-        <activity android:name="SignInActivity"
+        <activity android:name=".SplashScreenActivity"
             android:theme="@android:style/Theme.Light.NoTitleBar"
             android:windowSoftInputMode="adjustResize"
             android:label="@string/app_name">
@@ -57,9 +57,11 @@
             android:name=".FamilyTable"
             android:label="@string/v_Clientes" >
         </activity>
-        <activity android:name=".PokemonActivity"
-                  android:label="Pokemon">
+        <activity
+            android:name=".SignInActivity"
+            android:label="Gestor Ventas" >
         </activity>
+
 
 
 

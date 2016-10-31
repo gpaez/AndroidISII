@@ -82,16 +82,7 @@ public class SignInActivity extends Activity implements ProgressGenerator.OnComp
                 
             }
         });
-        lblRegistrar.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent(v.getContext(), RegisterActiviteUser.class);
-		        intent.putExtra(SignInActivity.EXTRAS_ENDLESS_MODE, true);
-		        startActivity(intent);
-			}
-		});
+		lblRegistrar.setVisibility(View.INVISIBLE);
     }
 
     private void buscarConfiguraciones() {
