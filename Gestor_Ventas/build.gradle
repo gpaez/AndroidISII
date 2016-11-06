@@ -7,15 +7,12 @@ android {
         applicationId "com.gestorventas"
         minSdkVersion 19
         targetSdkVersion 24
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
     }
 }
 
@@ -37,4 +34,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile project(':LibraryTab')
     compile project(':util-v4')
+}
+
+configurations {
+    all*.exclude group: 'com.android.support', module: 'support-v4'
 }

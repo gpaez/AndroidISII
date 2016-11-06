@@ -51,12 +51,12 @@ public class PedidoActivity extends AppCompatActivity{
             ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
             SmartTabLayout viewPagerTab = (SmartTabLayout) findViewById(R.id.viewpagertab);
             pedidoTab.setup(viewPagerTab);
-
+            int[] titleResId = pedidoTab.tabs();
             FragmentPagerItems pages = new FragmentPagerItems(this);
             //for (int titleResId : pedidoTab.tabs()) {
-                pages.add(FragmentPagerItem.of(getString(2131099710), PedidoClienteFragment.class));
-                pages.add(FragmentPagerItem.of(getString(2131099711), PedidoDetFragment.class));
-                pages.add(FragmentPagerItem.of(getString(2131099712), PedidoCobroFragment.class));
+                pages.add(FragmentPagerItem.of(getString(titleResId[0]), PedidoClienteFragment.class));
+                pages.add(FragmentPagerItem.of(getString(titleResId[1]), PedidoDetFragment.class));
+                pages.add(FragmentPagerItem.of(getString(titleResId[2]), PedidoCobroFragment.class));
             //}
 
             FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
