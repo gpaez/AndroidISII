@@ -8,20 +8,23 @@
         android:layout_width="79dp"
         android:layout_height="wrap_content"
         android:visibility="visible"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:textColor="@color/azure" />
 
     <TextView
         android:id="@+id/producto_nombre"
         android:layout_width="167dp"
         android:layout_height="wrap_content"
         android:textSize="12sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="@color/azure" />
 
     <TextView
         android:id="@+id/producto_precio"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="12sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="@color/azure" />
 
 </LinearLayout>

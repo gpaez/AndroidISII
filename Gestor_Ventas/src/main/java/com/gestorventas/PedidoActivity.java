@@ -21,11 +21,13 @@ import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 
 public class PedidoActivity extends AppCompatActivity{
     private static final String KEY_PEDIDO = "Pedido";
+    private static final String CLIENTE = "Cliente";
 
     public static void startActivity(Context context, PedidoTab pedidoTab) {
         try {
             Intent intent = new Intent(context, PedidoActivity.class);
             intent.putExtra(KEY_PEDIDO, pedidoTab.name());
+            intent.putExtra(CLIENTE, pedidoTab.cliente);
             context.startActivity(intent);
         }catch (Exception ex){
             //Util.err_Log(this, ex.getMessage());

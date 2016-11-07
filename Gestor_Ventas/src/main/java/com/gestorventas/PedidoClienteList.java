@@ -27,9 +27,11 @@ import com.nolanlawson.supersaiyan.Sectionizers;
 import com.nolanlawson.supersaiyan.widget.SuperSaiyanScrollView;
 
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Created by Guille on 28/10/16.
@@ -38,6 +40,7 @@ import java.util.List;
 public class PedidoClienteList extends ListFragment  {
 
     private View  view;
+    SimpleCursorAdapter adapter;
 
 
     private SuperSaiyanScrollView scrollView;
@@ -74,8 +77,8 @@ public class PedidoClienteList extends ListFragment  {
             lista = getListView();
 
             scrollView = (SuperSaiyanScrollView) view.findViewById(R.id.scroll);
-            SimpleCursorAdapter adapter = new SimpleCursorAdapter(
-                    getContext(), R.layout.pedido_cliente_item, cliente, from, to);
+             adapter = new SimpleCursorAdapter(
+                    getContext(), R.layout.pedido_cliente_item, cliente, from, to,0);
 
             adapter.notifyDataSetChanged();
             lista.setAdapter(adapter);
@@ -84,7 +87,11 @@ public class PedidoClienteList extends ListFragment  {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     PedidoTab pedidoTab = PedidoTab.values()[position];
+                    String codigo = ((TextView) view.findViewById(R.id.cliente_id)).getText().toString();
+                    String nombre = ((TextView) view.findViewById(R.id.cliente_nombre)).getText().toString();
+                    pedidoTab.setCliente(codigo+" - "+nombre);
                     pedidoTab.startActivity(getActivity());
+
                 }
             });
 

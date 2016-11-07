@@ -13,6 +13,7 @@ public enum PedidoTab {
 
   public final int titleResId;
   public final int layoutResId;
+  public String cliente;
 
   PedidoTab(int titleResId, int layoutResId) {
     this.titleResId = titleResId;
@@ -48,4 +49,7 @@ public enum PedidoTab {
     return tab10();
   }
 
+  public void setCliente(String cliente){
+    this.cliente = cliente;
+  }
 }

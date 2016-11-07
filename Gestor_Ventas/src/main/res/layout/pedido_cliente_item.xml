@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:visibility="visible"
         android:textSize="18sp"
-        android:textColor="@color/azure" />
+        android:textColor="@color/azure"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/cliente_nombre"
