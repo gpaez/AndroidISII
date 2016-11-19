@@ -1,5 +1,6 @@
 package com.gestorventas.database;
 
+import com.gestorventas.clases.Usuario;
 import com.gestorventas.tablas.TCliente;
 import com.gestorventas.tablas.TConfiguracion;
 import com.gestorventas.tablas.TProducto;
@@ -28,6 +29,8 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 		db.execSQL(TConfiguracion.CREATE_TABLE);
 		db.execSQL(TCliente.CREATE_TABLE);
 		db.execSQL(TProducto.CREATE_TABLE);
+
+		initUser(db);
 		
 	}
 
@@ -44,4 +47,12 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 		
 	}
 
+	private void initUser(SQLiteDatabase db){
+		Usuario us = new Usuario("admin","1234",1);
+		db.insert(TUsuario.NOMBRE_TABLA, "",us.clienteMapperContentValues());
+		us = new Usuario("fercho","1234",2);
+		db.insert(TUsuario.NOMBRE_TABLA, "", us.clienteMapperContentValues());
+		us = new Usuario("eve","1234",3);
+		db.insert(TUsuario.NOMBRE_TABLA, "", us.clienteMapperContentValues());
+	}
 }

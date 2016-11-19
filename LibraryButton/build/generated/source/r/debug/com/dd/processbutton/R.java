@@ -155,7 +155,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.dd.processbutton:pb_colorNormal
         */
-        public static int FlatButton_pb_colorNormal = 1;
+        public static final int FlatButton_pb_colorNormal = 1;
         /**
           <p>This symbol is the offset where the {@link com.dd.processbutton.R.attr#pb_colorPressed}
           attribute's value can be found in the {@link #FlatButton} array.
@@ -170,7 +170,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.dd.processbutton:pb_colorPressed
         */
-        public static int FlatButton_pb_colorPressed = 0;
+        public static final int FlatButton_pb_colorPressed = 0;
         /**
           <p>This symbol is the offset where the {@link com.dd.processbutton.R.attr#pb_cornerRadius}
           attribute's value can be found in the {@link #FlatButton} array.
@@ -186,7 +186,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.dd.processbutton:pb_cornerRadius
         */
-        public static int FlatButton_pb_cornerRadius = 2;
+        public static final int FlatButton_pb_cornerRadius = 2;
         /** Attributes that can be used with a ProcessButton.
            <p>Includes the following attributes:</p>
            <table>
@@ -225,7 +225,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.dd.processbutton:pb_colorComplete
         */
-        public static int ProcessButton_pb_colorComplete = 4;
+        public static final int ProcessButton_pb_colorComplete = 4;
         /**
           <p>This symbol is the offset where the {@link com.dd.processbutton.R.attr#pb_colorError}
           attribute's value can be found in the {@link #ProcessButton} array.
@@ -240,7 +240,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.dd.processbutton:pb_colorError
         */
-        public static int ProcessButton_pb_colorError = 5;
+        public static final int ProcessButton_pb_colorError = 5;
         /**
           <p>This symbol is the offset where the {@link com.dd.processbutton.R.attr#pb_colorProgress}
           attribute's value can be found in the {@link #ProcessButton} array.
@@ -255,7 +255,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.dd.processbutton:pb_colorProgress
         */
-        public static int ProcessButton_pb_colorProgress = 3;
+        public static final int ProcessButton_pb_colorProgress = 3;
         /**
           <p>This symbol is the offset where the {@link com.dd.processbutton.R.attr#pb_textComplete}
           attribute's value can be found in the {@link #ProcessButton} array.
@@ -269,7 +269,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.dd.processbutton:pb_textComplete
         */
-        public static int ProcessButton_pb_textComplete = 1;
+        public static final int ProcessButton_pb_textComplete = 1;
         /**
           <p>This symbol is the offset where the {@link com.dd.processbutton.R.attr#pb_textError}
           attribute's value can be found in the {@link #ProcessButton} array.
@@ -283,7 +283,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.dd.processbutton:pb_textError
         */
-        public static int ProcessButton_pb_textError = 2;
+        public static final int ProcessButton_pb_textError = 2;
         /**
           <p>This symbol is the offset where the {@link com.dd.processbutton.R.attr#pb_textProgress}
           attribute's value can be found in the {@link #ProcessButton} array.
@@ -297,6 +297,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.dd.processbutton:pb_textProgress
         */
-        public static int ProcessButton_pb_textProgress = 0;
+        public static final int ProcessButton_pb_textProgress = 0;
     };
 }

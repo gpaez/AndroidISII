@@ -1,16 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.3"
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
     defaultConfig {
         applicationId "com.gestorventas"
-        minSdkVersion 19
-        targetSdkVersion 24
+        minSdkVersion 16
+        targetSdkVersion 23
         multiDexEnabled true
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
     }
@@ -26,16 +26,19 @@ dependencies {
     compile project(':ResideMenu')
     compile project(':LibrarySwitch')
     compile project(':supersaiyan-scrollview')
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.google.android.gms:play-services-location:9.6.1'
-    compile 'com.android.support:support-v4:24.2.1'
-    compile 'com.android.support:recyclerview-v7:24.2.1'
-    testCompile 'junit:junit:4.12'
-    compile project(':LibraryTab')
+    compile(project(':LibraryTab')){
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
     compile project(':util-v4')
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.google.android.gms:play-services-location:9.6.1'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    testCompile 'junit:junit:4.12'
+
 }
 
 configurations {
     all*.exclude group: 'com.android.support', module: 'support-v4'
+    all*.exclude group: 'com.android.support', module: 'support-annotations'
 }

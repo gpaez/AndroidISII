@@ -36,7 +36,8 @@
         android:layout_toEndOf="@+id/textFechaVenta"
         android:layout_marginStart="41dp"
         android:layout_marginTop="14dp"
-        android:id="@+id/editFechaVenta" />
+        android:id="@+id/editFechaVenta"
+        android:textColor="@color/azure" />
 
 
     <TextView

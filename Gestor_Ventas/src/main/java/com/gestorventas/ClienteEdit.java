@@ -4,6 +4,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -94,6 +95,8 @@ public class ClienteEdit extends Fragment implements GoogleApiClient.OnConnectio
 
             }
         });
+
+
 
 
         editLongitud.setEnabled(false);
@@ -209,7 +212,7 @@ public class ClienteEdit extends Fragment implements GoogleApiClient.OnConnectio
             //Vuelve a la pantalla Principal
              getActivity().getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.main_fragment, new HomeFragment(), "fragment")
+                    .replace(R.id.main_fragment, new ClienteTableFragment(), "fragment")
                     .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit();
         } catch (Exception ex) {
@@ -244,4 +247,7 @@ public class ClienteEdit extends Fragment implements GoogleApiClient.OnConnectio
         apiClient.stopAutoManage(this.getActivity());
         apiClient.disconnect();
     }
+
+
+
 }

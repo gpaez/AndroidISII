@@ -53,6 +53,19 @@ public class Util {
 		return convertido; 
 	   
 	  }
+
+	/**
+	 * Conversion de Date a String
+	 * @param date
+	 * @param format
+     * @return
+     */
+	public static  String dateToStr(Date date, String format){
+		DateFormat fecha = new SimpleDateFormat(format);
+		String convertido = fecha.format(date);
+		System.out.println(convertido);
+		return convertido;
+	}
 	
 	public static java.util.Date getPrimerDiaDelMes()
 	  {

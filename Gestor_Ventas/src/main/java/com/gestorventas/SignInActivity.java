@@ -160,13 +160,6 @@ public class SignInActivity extends Activity implements ProgressGenerator.OnComp
 					}
 					usuario.moveToNext();
 				}
-			}else{
-				Usuario us = new Usuario("admin","1234",1);
-				getContentResolver().insert(DatabaseProvider.USUARIO_CONTENT_URI, us.clienteMapperContentValues());
-				us = new Usuario("fercho","1234",2);
-				getContentResolver().insert(DatabaseProvider.USUARIO_CONTENT_URI, us.clienteMapperContentValues());
-				us = new Usuario("eve","1234",3);
-				getContentResolver().insert(DatabaseProvider.USUARIO_CONTENT_URI, us.clienteMapperContentValues());
 			}
 	    	if (acceso){
 		        Intent intent = new Intent(this, MenuActivity.class);

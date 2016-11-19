@@ -18,7 +18,8 @@
 
         <FrameLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+            android:id="@+id/frmFragment">
 
             <Button
                     android:layout_width="28dp"

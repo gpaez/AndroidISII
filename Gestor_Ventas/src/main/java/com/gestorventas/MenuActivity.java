@@ -6,9 +6,11 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.KeyEvent;
 
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
+import android.widget.Toast;
 
 
 public class MenuActivity extends FragmentActivity implements View.OnClickListener{
@@ -129,14 +131,33 @@ public class MenuActivity extends FragmentActivity implements View.OnClickListen
                 .commit();
     }
 
-
-
-
-
-
-
     // What good method is to access resideMenu？
     public ResideMenu getResideMenu(){
         return resideMenu;
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
+            Fragment mFragment = getSupportFragmentManager().findFragmentById(R.id.main_fragment);
+
+            if (mFragment instanceof ClienteEdit)
+                changeFragment(new ClienteTableFragment());
+
+            if (mFragment instanceof ClienteTableFragment)
+                changeFragment(new HomeFragment());
+            if (mFragment instanceof ProductoListFragment)
+                changeFragment(new HomeFragment());
+            if (mFragment instanceof ProductoEdit)
+                changeFragment(new ProductoListFragment());
+
+            if (mFragment instanceof PedidoClienteList)
+                changeFragment(new HomeFragment());
+
+
+
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

@@ -97,19 +97,19 @@ containing a value of this type.
         public static int popup_full_dark=0x7f020005;
     }
     public static final class id {
-        public static int dark=0x7f080004;
-        public static int large=0x7f080000;
-        public static int light=0x7f080005;
-        public static int list_header_title=0x7f080006;
-        public static int normal=0x7f080001;
-        public static int small=0x7f080002;
-        public static int xlarge=0x7f080003;
+        public static int dark=0x7f070004;
+        public static int large=0x7f070002;
+        public static int light=0x7f070005;
+        public static int list_header_title=0x7f070006;
+        public static int normal=0x7f070001;
+        public static int small=0x7f070000;
+        public static int xlarge=0x7f070003;
     }
     public static final class layout {
         public static int list_header=0x7f030000;
     }
     public static final class string {
-        public static int app_name=0x7f070000;
+        public static int app_name=0x7f080000;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
@@ -165,7 +165,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.nolanlawson.supersaiyan:ssjn_overlayHeight
         */
-        public static int SuperSaiyanScrollView_ssjn_overlayHeight = 1;
+        public static final int SuperSaiyanScrollView_ssjn_overlayHeight = 1;
         /**
           <p>This symbol is the offset where the {@link com.nolanlawson.supersaiyan.R.attr#ssjn_overlaySizeScheme}
           attribute's value can be found in the {@link #SuperSaiyanScrollView} array.
@@ -184,7 +184,7 @@ containing a value of this type.
 </table>
           @attr name com.nolanlawson.supersaiyan:ssjn_overlaySizeScheme
         */
-        public static int SuperSaiyanScrollView_ssjn_overlaySizeScheme = 3;
+        public static final int SuperSaiyanScrollView_ssjn_overlaySizeScheme = 3;
         /**
           <p>This symbol is the offset where the {@link com.nolanlawson.supersaiyan.R.attr#ssjn_overlayTextColor}
           attribute's value can be found in the {@link #SuperSaiyanScrollView} array.
@@ -199,7 +199,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.nolanlawson.supersaiyan:ssjn_overlayTextColor
         */
-        public static int SuperSaiyanScrollView_ssjn_overlayTextColor = 4;
+        public static final int SuperSaiyanScrollView_ssjn_overlayTextColor = 4;
         /**
           <p>This symbol is the offset where the {@link com.nolanlawson.supersaiyan.R.attr#ssjn_overlayTextSize}
           attribute's value can be found in the {@link #SuperSaiyanScrollView} array.
@@ -215,7 +215,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.nolanlawson.supersaiyan:ssjn_overlayTextSize
         */
-        public static int SuperSaiyanScrollView_ssjn_overlayTextSize = 2;
+        public static final int SuperSaiyanScrollView_ssjn_overlayTextSize = 2;
         /**
           <p>This symbol is the offset where the {@link com.nolanlawson.supersaiyan.R.attr#ssjn_overlayTheme}
           attribute's value can be found in the {@link #SuperSaiyanScrollView} array.
@@ -232,7 +232,7 @@ containing a value of this type.
 </table>
           @attr name com.nolanlawson.supersaiyan:ssjn_overlayTheme
         */
-        public static int SuperSaiyanScrollView_ssjn_overlayTheme = 5;
+        public static final int SuperSaiyanScrollView_ssjn_overlayTheme = 5;
         /**
           <p>This symbol is the offset where the {@link com.nolanlawson.supersaiyan.R.attr#ssjn_overlayWidth}
           attribute's value can be found in the {@link #SuperSaiyanScrollView} array.
@@ -248,6 +248,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.nolanlawson.supersaiyan:ssjn_overlayWidth
         */
-        public static int SuperSaiyanScrollView_ssjn_overlayWidth = 0;
+        public static final int SuperSaiyanScrollView_ssjn_overlayWidth = 0;
     };
 }
