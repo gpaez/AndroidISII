@@ -1,5 +1,6 @@
 package com.gestorventas;
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -13,13 +14,27 @@ import android.widget.Toast;
 
 import com.gestorventas.clases.Producto;
 import com.gestorventas.database.DatabaseProvider;
+import com.gestorventas.tablas.TProducto;
 import com.gestorventas.utils.Util;
+import com.ogaclejapan.smarttablayout.utils.v4.Bundler;
 
 /**
  * Created by Guille on 30/10/16.
  */
 
 public class ProductoEdit extends Fragment {
+
+    private static String KEY_PARAM ;
+    public static void newInstance(String param) {
+        KEY_PARAM = param;
+        return ;
+    }
+
+    public static Bundle arguments(String param) {
+        return new Bundler()
+                .putString(KEY_PARAM, param)
+                .get();
+    }
     private View view;
     private EditText editCodigo;
     private EditText editDescripcion;
@@ -55,6 +70,13 @@ public class ProductoEdit extends Fragment {
                     cancelar(v);
                 }
             });
+
+            if ((KEY_PARAM).trim() != ""){
+                editCodigo.setEnabled(false);
+                buscarProducto();
+                editDescripcion.requestFocus();
+
+            }
         }catch (Exception ex){
             Util.err_Log(this,ex.getMessage());
         }
@@ -63,6 +85,34 @@ public class ProductoEdit extends Fragment {
 
 
         return view;
+    }
+
+    private void buscarProducto() {
+        String[] from = new String[] {
+                TProducto.COL_ROWID,
+                TProducto.COL_DESCRIPCION,
+                TProducto.COL_PRECIO_VENTA,
+                TProducto.COL_EXISTENCIA
+        };
+        int[] to = new int[] {
+                R.id.producto_id,
+                R.id.producto_nombre,
+                R.id.producto_precio,
+                R.id.producto_existencia
+        };
+
+        Cursor producto = getActivity().getContentResolver().query(DatabaseProvider.PRODUCTO_CONTENT_URI, from,
+                null, null,null);
+        if (producto.moveToFirst()){
+            do{
+                if ((KEY_PARAM).trim().equals(producto.getString(0))){
+                    editCodigo.setText(KEY_PARAM);
+                    editDescripcion.setText(producto.getString(1));
+                    editExistencia.setText(producto.getString(3));
+                    editPrecio.setText(producto.getString(2));
+                }
+            }while(producto.moveToNext());
+        }
     }
 
     private void aceptar(View v){

@@ -36,7 +36,7 @@
     <com.nolanlawson.supersaiyan.widget.SuperSaiyanScrollView
     android:id="@+id/scroll"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     myapp:ssjn_overlaySizeScheme="small"
         android:layout_below="@+id/pnlTitulo">
 

@@ -7,26 +7,6 @@
     android:background="@drawable/bg3">
 
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:id="@+id/pnlProductoPedido">
-
-        <Spinner
-            android:layout_width="324dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton2"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -91,6 +71,59 @@
 
         </com.nolanlawson.supersaiyan.widget.SuperSaiyanScrollView>
 
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pnlProductoPedido"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Spinner
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerProducto"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Cantidad:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="39dp"
+            android:id="@+id/textView19"
+            android:textColor="@color/azure"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAgregarProducto"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_input_add"
+            android:layout_below="@+id/spinnerProducto"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/textView19" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_toEndOf="@+id/textView19"
+            android:id="@+id/editCantPedido"
+            android:textColor="@color/azure"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerProducto" />
 
     </RelativeLayout>
 

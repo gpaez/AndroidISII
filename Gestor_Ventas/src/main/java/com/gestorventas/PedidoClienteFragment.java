@@ -4,12 +4,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.gestorventas.clases.Usuario;
 import com.ogaclejapan.smarttablayout.utils.v4.Bundler;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItem;
 import java.text.SimpleDateFormat;
@@ -64,8 +66,18 @@ public class PedidoClienteFragment extends Fragment{
         edtFechaVenta.setText(formateador.format(new Date()));
         edtFechaVenta.setEnabled(false);
         //edtFechaVenta.setTextColor(R.color.azure);
+        PedidoActivity.pedido.setFechaVenta(new Date());
+        PedidoActivity.pedido.setIdVendedor(Usuario.VENDEDOR);
 
-
+        scVenta.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked){
+                    PedidoActivity.pedido.setCondicionVenta(1);
+                }else
+                    PedidoActivity.pedido.setCondicionVenta(0);
+            }
+        });
 
     }
 

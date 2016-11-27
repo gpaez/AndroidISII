@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +30,7 @@ import com.inqbarna.tablefixheaders.adapters.BaseTableAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClienteTableFragment extends Fragment {
+public class ClienteTableFragment extends Fragment{
 
     private class ClienteTypes {
         private final String name;
@@ -49,13 +50,17 @@ public class ClienteTableFragment extends Fragment {
         }
     }
     private ImageButton imgButton;
+    private TableFixHeaders tableFixHeaders;
+    private BaseTableAdapter baseTableAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.clientes_list, container, false);
-        TableFixHeaders tableFixHeaders = (TableFixHeaders)  view.findViewById(R.id.tableCliente);
-        BaseTableAdapter baseTableAdapter = new ClienteAdapter(this.getContext());
+        tableFixHeaders = (TableFixHeaders)  view.findViewById(R.id.tableCliente);
+        baseTableAdapter = new ClienteAdapter(this.getContext());
         tableFixHeaders.setAdapter(baseTableAdapter);
+
+
 
         return view;
     }
@@ -74,6 +79,7 @@ public class ClienteTableFragment extends Fragment {
                         .commit();
             }
         });
+
 
     }
 

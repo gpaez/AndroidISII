@@ -10,11 +10,16 @@ import java.util.Calendar;
 import java.util.Date;
 
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 
 
 import android.content.Context;
 import android.os.Vibrator;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -265,5 +270,49 @@ public class Util {
 	}
 
 
+    public static void alerta(Fragment view, String titulo, String mensaje){
+        new AlertDialog.Builder(view.getContext())
+                .setTitle(titulo)
+                .setMessage(mensaje)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // continue with delete
+                    }
+                })/*
+                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do nothing
+                    }
+                })*/
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+    }
+
+
+    public static class MensajeDialog extends DialogFragment{
+        Context mContext;
+        public MensajeDialog() {
+            mContext = getActivity();
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mContext);
+            alertDialogBuilder.setTitle("Really?");
+            alertDialogBuilder.setMessage("Are you sure?");
+            //null should be your on click listener
+            alertDialogBuilder.setPositiveButton("OK", null);
+            alertDialogBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+
+
+            return alertDialogBuilder.create();
+        }
+    }
 
 }

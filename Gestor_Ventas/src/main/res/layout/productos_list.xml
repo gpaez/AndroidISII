@@ -40,6 +40,14 @@
             android:layout_weight="0.25"
             android:textColor="@color/azure"
             android:textStyle="bold" />
+
+        <TextView
+            android:text="Existencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView18"
+            android:layout_weight="0.09"
+            android:textColor="@color/azure" />
     </LinearLayout>
     <com.nolanlawson.supersaiyan.widget.SuperSaiyanScrollView
         android:id="@+id/scroll"

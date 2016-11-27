@@ -10,7 +10,11 @@ import com.gestorventas.tablas.TPedidoDet;
 import com.gestorventas.utils.*;
 
 public class Pedido {
-	private int idPedido;
+
+
+
+
+    private int idPedido;
 	private int idCliente;
 	private int condicionVenta;
 	private Date fechaVenta;
@@ -72,6 +76,118 @@ public class Pedido {
         cv.put(TPedidoDet.COL_CANTIDAD , this.cantidad);
 
         return cv;
+    }
+
+    public int getIdPedido() {
+        return idPedido;
+    }
+
+    public void setIdPedido(int idPedido) {
+        this.idPedido = idPedido;
+    }
+
+    public int getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
+    }
+
+    public int getCondicionVenta() {
+        return condicionVenta;
+    }
+
+    public void setCondicionVenta(int condicionVenta) {
+        this.condicionVenta = condicionVenta;
+    }
+
+    public Date getFechaVenta() {
+        return fechaVenta;
+    }
+
+    public void setFechaVenta(Date fechaVenta) {
+        this.fechaVenta = fechaVenta;
+    }
+
+    public int getIdVendedor() {
+        return idVendedor;
+    }
+
+    public void setIdVendedor(int idVendedor) {
+        this.idVendedor = idVendedor;
+    }
+
+    public double getImporteGravado() {
+        return importeGravado;
+    }
+
+    public void setImporteGravado(double importeGravado) {
+        this.importeGravado = importeGravado;
+    }
+
+    public double getImporteIva() {
+        return importeIva;
+    }
+
+    public void setImporteIva(double importeIva) {
+        this.importeIva = importeIva;
+    }
+
+    public double getImporteTotal() {
+        return importeTotal;
+    }
+
+    public void setImporteTotal(double importeTotal) {
+        this.importeTotal = importeTotal;
+    }
+
+    public int getIdProducto() {
+        return idProducto;
+    }
+
+    public void setIdProducto(int idProducto) {
+        this.idProducto = idProducto;
+    }
+
+    public float getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(float cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public double getPrecioVenta() {
+        return precioVenta;
+    }
+
+    public void setPrecioVenta(double precioVenta) {
+        this.precioVenta = precioVenta;
+    }
+
+    public double getImpGravadoDet() {
+        return impGravadoDet;
+    }
+
+    public void setImpGravadoDet(double impGravadoDet) {
+        this.impGravadoDet = impGravadoDet;
+    }
+
+    public double getImpIvaDet() {
+        return impIvaDet;
+    }
+
+    public void setImpIvaDet(double impIvaDet) {
+        this.impIvaDet = impIvaDet;
+    }
+
+    public double getImpTotalDet() {
+        return impTotalDet;
+    }
+
+    public void setImpTotalDet(double impTotalDet) {
+        this.impTotalDet = impTotalDet;
     }
 	
 	

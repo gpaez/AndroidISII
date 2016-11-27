@@ -1,5 +1,6 @@
 package com.gestorventas;
 
+import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
+import com.gestorventas.clases.Pedido;
 import com.gestorventas.utils.Util;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItem;
@@ -22,6 +24,7 @@ import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 public class PedidoActivity extends AppCompatActivity{
     private static final String KEY_PEDIDO = "Pedido";
     private static final String CLIENTE = "Cliente";
+    public static Pedido pedido;
 
     public static void startActivity(Context context, PedidoTab pedidoTab) {
         try {
@@ -40,7 +43,7 @@ public class PedidoActivity extends AppCompatActivity{
         try {
             setContentView(R.layout.pedido_activity);
 
-            PedidoTab pedidoTab = getPedidoTab();
+            final PedidoTab pedidoTab = getPedidoTab();
 
 
 
@@ -68,6 +71,38 @@ public class PedidoActivity extends AppCompatActivity{
 
             FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                     getSupportFragmentManager(), pages);
+
+            viewPagerTab.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+                @Override
+                public void onPageScrolled(int i, float v, int i1) {
+
+                    switch (i){
+                        case 0:
+                            if (PedidoActivity.pedido == null){
+                                PedidoActivity.pedido = new Pedido();
+                            }
+                            String[] palabrasSeparadas = pedidoTab.cliente.split("-");
+                            PedidoActivity.pedido.setIdCliente(Integer.parseInt(palabrasSeparadas[0].trim()));
+                            break;
+                        case 1:
+                            break;
+                        default:
+                            break;
+
+
+                    }
+                }
+
+                @Override
+                public void onPageSelected(int i) {
+
+                }
+
+                @Override
+                public void onPageScrollStateChanged(int i) {
+
+                }
+            });
 
 
 

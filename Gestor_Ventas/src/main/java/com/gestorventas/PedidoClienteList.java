@@ -16,6 +16,7 @@ import android.widget.ListView;
 import com.gestorventas.clases.Cliente;
 import com.gestorventas.clases.ClienteAdapter;
 import com.gestorventas.clases.ClienteHelper;
+import com.gestorventas.clases.Pedido;
 import com.gestorventas.database.DatabaseProvider;
 import com.gestorventas.database.PocketMonster;
 import com.gestorventas.database.PocketMonsterAdapter;
@@ -91,6 +92,8 @@ public class PedidoClienteList extends ListFragment  {
                     String nombre = ((TextView) view.findViewById(R.id.cliente_nombre)).getText().toString();
                     pedidoTab.setCliente(codigo+" - "+nombre);
                     pedidoTab.startActivity(getActivity());
+
+                    PedidoActivity.pedido = new Pedido();
 
                 }
             });

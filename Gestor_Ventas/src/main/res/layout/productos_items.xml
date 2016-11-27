@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@color/blue_normal">
     <TextView
         android:id="@+id/producto_id"
         android:layout_width="79dp"
@@ -13,7 +14,7 @@
 
     <TextView
         android:id="@+id/producto_nombre"
-        android:layout_width="167dp"
+        android:layout_width="151dp"
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textStyle="bold"
@@ -21,10 +22,17 @@
 
     <TextView
         android:id="@+id/producto_precio"
-        android:layout_width="fill_parent"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textStyle="bold"
+        android:textColor="@color/azure" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/producto_existencia"
+        android:layout_width="65dp"
+        android:textSize="12sp"
         android:textColor="@color/azure" />
 
 </LinearLayout>

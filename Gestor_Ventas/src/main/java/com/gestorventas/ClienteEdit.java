@@ -29,6 +29,7 @@ import com.google.android.gms.location.LocationServices;
 import com.kyleduo.switchbutton.SwitchButton;
 import android.widget.Toast;
 import com.gestorventas.database.DatabaseProvider;
+import com.ogaclejapan.smarttablayout.utils.v4.Bundler;
 
 import org.w3c.dom.Text;
 
@@ -38,6 +39,8 @@ import org.w3c.dom.Text;
 
 public class ClienteEdit extends Fragment implements GoogleApiClient.OnConnectionFailedListener,
         GoogleApiClient.ConnectionCallbacks{
+
+    private static final String KEY_PARAM = "codcliente";
 
     private EditText editLongitud;
     private EditText editLatitud;
@@ -51,13 +54,26 @@ public class ClienteEdit extends Fragment implements GoogleApiClient.OnConnectio
     private Button btnRegistar;
     private TextView txtPago;
 
+    public static ClienteEdit newInstance(String param) {
+        ClienteEdit fragment = new ClienteEdit();
+        fragment.setArguments(arguments(param));
+
+        return fragment;
+    }
+
+    public static Bundle arguments(String param) {
+        return new Bundler()
+                .putString(KEY_PARAM, param)
+                .get();
+    }
+
+
+
     private static final String LOGTAG = "android-localizacion";
 
     private static final int PETICION_PERMISO_LOCALIZACION = 101;
 
     private GoogleApiClient apiClient;
-
-
 
 
     @Override
