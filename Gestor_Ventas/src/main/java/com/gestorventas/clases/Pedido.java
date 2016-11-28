@@ -31,6 +31,16 @@ public class Pedido {
 	private double impIvaDet;
 	private double impTotalDet;
 
+    public String getDescrProducto() {
+        return descrProducto;
+    }
+
+    public void setDescrProducto(String descrProducto) {
+        this.descrProducto = descrProducto;
+    }
+
+    private String descrProducto;
+
 	private  String[] data;
 	
 	public Pedido() {

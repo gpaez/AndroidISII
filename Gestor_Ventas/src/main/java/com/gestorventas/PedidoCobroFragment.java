@@ -3,12 +3,14 @@ package com.gestorventas;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.ogaclejapan.smarttablayout.utils.v4.Bundler;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItem;
 
 /**
@@ -21,6 +23,8 @@ public class PedidoCobroFragment extends Fragment {
     private EditText editTotal;
     private Button btnConfirmarVenta;
     private View view;
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
@@ -41,5 +45,11 @@ public class PedidoCobroFragment extends Fragment {
         editIVA.setEnabled(false);
         editSubTotal.setEnabled(false);
         btnConfirmarVenta.requestFocus();
+    }
+
+    public  void setTotales(String totales,
+                                  String gravadas,
+                                  String iva){
+        this.editTotal.setText(totales);
     }
 }

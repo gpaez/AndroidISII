@@ -2,6 +2,8 @@ package com.gestorventas.database;
 
 import com.gestorventas.tablas.TCliente;
 import com.gestorventas.tablas.TConfiguracion;
+import com.gestorventas.tablas.TPedidoCab;
+import com.gestorventas.tablas.TPedidoDet;
 import com.gestorventas.tablas.TProducto;
 import com.gestorventas.tablas.TUsuario;
 
@@ -54,6 +56,22 @@ public class DatabaseProvider extends ContentProvider{
 	public static final String PRODUCTO_CONTENT_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE
 			+ "/mt-" + TProducto.NOMBRE_TABLA;
 
+	//Pedido
+	public static final Uri PEDIDO_CABECERA_CONTENT_URI = Uri.parse("content://" + AUTHORITY
+			+ "/" + TPedidoCab.NOMBRE_TABLA);
+	public static final String PEDIDO_CABECERA_CONTENT_ITEM_TYPE = ContentResolver.CURSOR_ITEM_BASE_TYPE
+			+ "/mt-" + TPedidoCab.NOMBRE_TABLA;
+	public static final String PEDIDO_CABECERA_CONTENT_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE
+			+ "/mt-" + TPedidoCab.NOMBRE_TABLA;
+
+
+	//Pedido DETALLE
+	public static final Uri PEDIDO_DETALLE_CONTENT_URI = Uri.parse("content://" + AUTHORITY
+			+ "/" + TPedidoDet.NOMBRE_TABLA);
+	public static final String PEDIDO_DETALLE__CONTENT_ITEM_TYPE = ContentResolver.CURSOR_ITEM_BASE_TYPE
+			+ "/mt-" + TPedidoDet.NOMBRE_TABLA;
+	public static final String PEDIDO_DETALLE_CONTENT_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE
+			+ "/mt-" + TPedidoDet.NOMBRE_TABLA;
     
     private static final UriMatcher sURIMatcher = new UriMatcher(UriMatcher.NO_MATCH);
     
@@ -69,6 +87,13 @@ public class DatabaseProvider extends ContentProvider{
 
 		sURIMatcher.addURI(AUTHORITY, TProducto.NOMBRE_TABLA, TProducto.SELECT_ALL);
 		sURIMatcher.addURI(AUTHORITY, TProducto.NOMBRE_TABLA + "/#", TProducto.SELECT_DISTINCT);
+
+		sURIMatcher.addURI(AUTHORITY, TPedidoCab.NOMBRE_TABLA, TPedidoCab.SELECT_ALL);
+		sURIMatcher.addURI(AUTHORITY, TPedidoCab.NOMBRE_TABLA + "/#", TPedidoCab.SELECT_DISTINCT);
+
+		sURIMatcher.addURI(AUTHORITY, TPedidoDet.NOMBRE_TABLA, TPedidoDet.SELECT_ALL);
+		sURIMatcher.addURI(AUTHORITY, TPedidoDet.NOMBRE_TABLA + "/#", TPedidoDet.SELECT_DISTINCT);
+
     }
 	
 	
@@ -119,7 +144,7 @@ public class DatabaseProvider extends ContentProvider{
 				id = uri.getLastPathSegment();
 				if (TextUtils.isEmpty(selection)) {
 					rowsAffected = sqlDB.delete(TCliente.NOMBRE_TABLA,
-							TConfiguracion.COL_ROWID + "=" + id, null);
+							TCliente.COL_ROWID + "=" + id, null);
 				} else {
 					rowsAffected = sqlDB.delete(TCliente.NOMBRE_TABLA,
 							selection + " and " + TCliente.COL_ROWID + "=" + id,
@@ -131,10 +156,34 @@ public class DatabaseProvider extends ContentProvider{
 				id = uri.getLastPathSegment();
 				if (TextUtils.isEmpty(selection)) {
 					rowsAffected = sqlDB.delete(TProducto.NOMBRE_TABLA,
-							TConfiguracion.COL_ROWID + "=" + id, null);
+							TProducto.COL_ROWID + "=" + id, null);
 				} else {
 					rowsAffected = sqlDB.delete(TProducto.NOMBRE_TABLA,
 							selection + " and " + TProducto.COL_ROWID + "=" + id,
+							selectionArgs);
+				}
+				break;
+			//PEDIDO CAB
+			case TPedidoCab.SELECT_DISTINCT:
+				id = uri.getLastPathSegment();
+				if (TextUtils.isEmpty(selection)) {
+					rowsAffected = sqlDB.delete(TPedidoCab.NOMBRE_TABLA,
+							TPedidoCab.COL_ROWID + "=" + id, null);
+				} else {
+					rowsAffected = sqlDB.delete(TPedidoCab.NOMBRE_TABLA,
+							selection + " and " + TPedidoCab.COL_ROWID + "=" + id,
+							selectionArgs);
+				}
+				break;
+			//PEDIDO CAB
+			case TPedidoDet.SELECT_DISTINCT:
+				id = uri.getLastPathSegment();
+				if (TextUtils.isEmpty(selection)) {
+					rowsAffected = sqlDB.delete(TPedidoDet.NOMBRE_TABLA,
+							TPedidoDet.COL_ROWID + "=" + id, null);
+				} else {
+					rowsAffected = sqlDB.delete(TPedidoDet.NOMBRE_TABLA,
+							selection + " and " + TPedidoDet.COL_ROWID + "=" + id,
 							selectionArgs);
 				}
 				break;
@@ -169,6 +218,16 @@ public class DatabaseProvider extends ContentProvider{
 				return PRODUCTO_CONTENT_TYPE;
 			case TProducto.SELECT_DISTINCT:
 				return PRODUCTO_CONTENT_ITEM_TYPE;
+			//PEDIDO CAB
+			case TPedidoCab.SELECT_ALL:
+				return PEDIDO_CABECERA_CONTENT_TYPE;
+			case TPedidoCab.SELECT_DISTINCT:
+				return PEDIDO_CABECERA_CONTENT_ITEM_TYPE;
+			//PEDIDO CAB
+			case TPedidoDet.SELECT_ALL:
+				return PEDIDO_DETALLE_CONTENT_TYPE;
+			case TPedidoDet.SELECT_DISTINCT:
+				return PEDIDO_DETALLE__CONTENT_ITEM_TYPE;
 	        default:
 	            return null;
         }
@@ -178,7 +237,9 @@ public class DatabaseProvider extends ContentProvider{
 	public Uri insert(Uri uri, ContentValues values) {
 		int uriType = sURIMatcher.match(uri);
 		if (uriType != TUsuario.SELECT_ALL && uriType != TConfiguracion.SELECT_ALL &&
-            uriType != TCliente.SELECT_ALL && uriType != TProducto.SELECT_ALL) {
+            uriType != TCliente.SELECT_ALL && uriType != TProducto.SELECT_ALL &&
+			uriType != TPedidoCab.SELECT_ALL && uriType != TPedidoCab.SELECT_ALL &&
+				uriType != TPedidoDet.SELECT_ALL && uriType != TPedidoDet.SELECT_ALL) {
         throw new IllegalArgumentException("URI inválida para la inserción.");
 	    }
 	    SQLiteDatabase sqlDB = mDB.getWritableDatabase();
@@ -248,6 +309,16 @@ public class DatabaseProvider extends ContentProvider{
 			case TProducto.SELECT_ALL:
 				// tabla
 				queryBuilder.setTables(TProducto.NOMBRE_TABLA);
+				// sin filtro
+				break;
+			case TPedidoCab.SELECT_ALL:
+				// tabla
+				queryBuilder.setTables(TPedidoCab.NOMBRE_TABLA);
+				// sin filtro
+				break;
+			case TPedidoDet.SELECT_ALL:
+				// tabla
+				queryBuilder.setTables(TPedidoDet.NOMBRE_TABLA);
 				// sin filtro
 				break;
         	 default:
@@ -325,7 +396,7 @@ public class DatabaseProvider extends ContentProvider{
 				rowsAffected = sqlDB.update(TCliente.NOMBRE_TABLA,
 						values, selection, selectionArgs);
 				break;
-            //Cliente
+            //Producto
 			case TProducto.SELECT_DISTINCT:
 				id = uri.getLastPathSegment();
 				modSelection =
@@ -340,6 +411,40 @@ public class DatabaseProvider extends ContentProvider{
 				break;
 			case TProducto.SELECT_ALL:
 				rowsAffected = sqlDB.update(TProducto.NOMBRE_TABLA,
+						values, selection, selectionArgs);
+				break;
+			//Pedido
+			case TPedidoCab.SELECT_DISTINCT:
+				id = uri.getLastPathSegment();
+				modSelection =
+						new StringBuilder(TPedidoCab.COL_ROWID + "=" + id);
+
+				if (!TextUtils.isEmpty(selection)) {
+					modSelection.append(" AND " + selection);
+				}
+
+				rowsAffected = sqlDB.update(TPedidoCab.NOMBRE_TABLA,
+						values, modSelection.toString(), null);
+				break;
+			case TPedidoCab.SELECT_ALL:
+				rowsAffected = sqlDB.update(TPedidoCab.NOMBRE_TABLA,
+						values, selection, selectionArgs);
+				break;
+			//Pedido
+			case TPedidoDet.SELECT_DISTINCT:
+				id = uri.getLastPathSegment();
+				modSelection =
+						new StringBuilder(TPedidoDet.COL_ROWID + "=" + id);
+
+				if (!TextUtils.isEmpty(selection)) {
+					modSelection.append(" AND " + selection);
+				}
+
+				rowsAffected = sqlDB.update(TPedidoDet.NOMBRE_TABLA,
+						values, modSelection.toString(), null);
+				break;
+			case TPedidoDet.SELECT_ALL:
+				rowsAffected = sqlDB.update(TPedidoDet.NOMBRE_TABLA,
 						values, selection, selectionArgs);
 				break;
 	        default:
@@ -372,6 +477,16 @@ public class DatabaseProvider extends ContentProvider{
 				return TProducto.NOMBRE_TABLA;
 			case TProducto.SELECT_DISTINCT:
 				return TProducto.NOMBRE_TABLA;
+			//Producto
+			case TPedidoCab.SELECT_ALL:
+				return TPedidoCab.NOMBRE_TABLA;
+			case TPedidoCab.SELECT_DISTINCT:
+				return TPedidoCab.NOMBRE_TABLA;
+			//Producto
+			case TPedidoDet.SELECT_ALL:
+				return TPedidoDet.NOMBRE_TABLA;
+			case TPedidoDet.SELECT_DISTINCT:
+				return TPedidoDet.NOMBRE_TABLA;
 	        default:
 	            return null;
 	        }

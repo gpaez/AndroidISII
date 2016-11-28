@@ -3,6 +3,8 @@ package com.gestorventas.database;
 import com.gestorventas.clases.Usuario;
 import com.gestorventas.tablas.TCliente;
 import com.gestorventas.tablas.TConfiguracion;
+import com.gestorventas.tablas.TPedidoCab;
+import com.gestorventas.tablas.TPedidoDet;
 import com.gestorventas.tablas.TProducto;
 import com.gestorventas.tablas.TUsuario;
 
@@ -29,6 +31,8 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 		db.execSQL(TConfiguracion.CREATE_TABLE);
 		db.execSQL(TCliente.CREATE_TABLE);
 		db.execSQL(TProducto.CREATE_TABLE);
+		db.execSQL(TPedidoCab.CREATE_TABLE);
+		db.execSQL(TProducto.CREATE_TABLE);
 
 		initUser(db);
 		
@@ -43,6 +47,8 @@ public class DatabaseHandler extends SQLiteOpenHelper{
 		db.execSQL(TConfiguracion.DROP_TABLE);
 		db.execSQL(TCliente.DROP_TABLE);
 		db.execSQL(TProducto.DROP_TABLE);
+		db.execSQL(TPedidoCab.DROP_TABLE);
+		db.execSQL(TPedidoDet.DROP_TABLE);
 		onCreate(db);
 		
 	}

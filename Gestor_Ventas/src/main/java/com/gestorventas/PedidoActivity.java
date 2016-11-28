@@ -67,7 +67,7 @@ public class PedidoActivity extends AppCompatActivity{
 
             ));
             pages.add(FragmentPagerItem.of(getString(titleResId[1]), PedidoDetFragment.class));
-            pages.add(FragmentPagerItem.of(getString(titleResId[2]), PedidoCobroFragment.class));
+            //pages.add(FragmentPagerItem.of(getString(titleResId[2]), PedidoCobroFragment.class));
 
             FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                     getSupportFragmentManager(), pages);
@@ -86,6 +86,8 @@ public class PedidoActivity extends AppCompatActivity{
                             break;
                         case 1:
                             break;
+                        case 2:
+                            obtenerTotalPedido();
                         default:
                             break;
 
@@ -113,6 +115,11 @@ public class PedidoActivity extends AppCompatActivity{
         }catch (Exception ex){
             Util.err_Log(this, ex.getMessage());
         }
+
+    }
+
+    private void obtenerTotalPedido() {
+
 
     }
 
