@@ -43,6 +43,9 @@ public class PedidoClienteFragment extends Fragment{
     private TextView txtCliente;
     private Switch scVenta;
     private EditText edtFechaVenta;
+    private EditText textDireccion;
+    private EditText textRUC;
+    private EditText textTelefono;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
@@ -61,6 +64,9 @@ public class PedidoClienteFragment extends Fragment{
         edtFechaVenta = (EditText) view.findViewById(R.id.editFechaVenta);
 
         txtCliente.setText(getArguments().getString(KEY_PARAM));
+
+        String[] palabrasSeparadas = KEY_PARAM.split("-");
+
         txtFecha.setText("Fecha Actual");
         SimpleDateFormat formateador = new SimpleDateFormat("dd/MM/yyyy");
         edtFechaVenta.setText(formateador.format(new Date()));

@@ -87,13 +87,17 @@ public class PedidoClienteList extends ListFragment  {
             lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    PedidoTab pedidoTab = PedidoTab.values()[position];
-                    String codigo = ((TextView) view.findViewById(R.id.cliente_id)).getText().toString();
-                    String nombre = ((TextView) view.findViewById(R.id.cliente_nombre)).getText().toString();
-                    pedidoTab.setCliente(codigo+" - "+nombre);
-                    pedidoTab.startActivity(getActivity());
+                    try {
+                        PedidoTab pedidoTab = PedidoTab.values()[0];
+                        String codigo = ((TextView) view.findViewById(R.id.cliente_id)).getText().toString();
+                        String nombre = ((TextView) view.findViewById(R.id.cliente_nombre)).getText().toString();
+                        pedidoTab.setCliente(codigo + " - " + nombre);
+                        pedidoTab.startActivity(getActivity());
 
-                    PedidoActivity.pedido = new Pedido();
+                        PedidoActivity.pedido = new Pedido();
+                    }catch (Exception ex){
+                        Util.err_Log(PedidoClienteList.this, ex.getMessage());
+                    }
 
                 }
             });

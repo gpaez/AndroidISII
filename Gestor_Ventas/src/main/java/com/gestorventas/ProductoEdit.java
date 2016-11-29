@@ -71,7 +71,7 @@ public class ProductoEdit extends Fragment {
                 }
             });
 
-            if ((KEY_PARAM).trim() != ""){
+            if ((KEY_PARAM) != ""){
                 editCodigo.setEnabled(false);
                 buscarProducto();
                 editDescripcion.requestFocus();

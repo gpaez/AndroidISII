@@ -1,5 +1,6 @@
 package com.gestorventas;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -129,7 +130,7 @@ public class PedidoDetFragment extends ListFragment implements AdapterView.OnIte
 
 
 
-
+;
         }catch (Exception ex){
             Util.err_Log(this, ex.getMessage());
         }
@@ -141,14 +142,22 @@ public class PedidoDetFragment extends ListFragment implements AdapterView.OnIte
     }
 
     private void confirmarVenta(View v) {
+        try {
+            Util.alerta(this, "Pedido", "Su pedido se ha grabado correctamente");
+            Intent intent = new Intent(getActivity(), MenuActivity.class);
+            intent.putExtra(SignInActivity.EXTRAS_ENDLESS_MODE, true);
+            startActivity(intent);
+        }catch (Exception ex){
+            Util.err_Log(getParentFragment(), ex.getMessage());
+        }
         //RegistrarCabecera;
-        Pedido pedido = new Pedido();
-        pedido.Cabecera(PedidoActivity.pedido.getIdCliente(),
-                        PedidoActivity.pedido.getCondicionVenta(),
-                        PedidoActivity.pedido.getFechaVenta(),
-                        PedidoActivity.pedido.getIdVendedor());
-        getActivity().getContentResolver().insert(DatabaseProvider.PEDIDO_CABECERA_CONTENT_URI,
-                pedido.pedidoCabeceraMapperContentValues());
+       // Pedido pedido = new Pedido();
+        //pedido.Cabecera(PedidoActivity.pedido.getIdCliente(),
+        //                PedidoActivity.pedido.getCondicionVenta(),
+        //                PedidoActivity.pedido.getFechaVenta(),
+        //                PedidoActivity.pedido.getIdVendedor());
+        //getActivity().getContentResolver().insert(DatabaseProvider.PEDIDO_CABECERA_CONTENT_URI,
+        //        pedido.pedidoCabeceraMapperContentValues());
     }
 
     private void obtenerDatosProducto(long id) {
